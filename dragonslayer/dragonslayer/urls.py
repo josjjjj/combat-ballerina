@@ -27,13 +27,13 @@ def add (request,a:int, b:int):
     return {"result": a+b}
 @api.get("/subtract")
 def subtract (request,a:int, b:int):
-    return {"result": a+b}
+    return {"result": a-b}
 @api.get("/divide")
 def divide (request,a:int, b:int):
-    return {"result": a+b}
+    return {"result": a/b}
 @api.get("/multiplication")
 def multiplication (request,a:int, b:int):
-    return {"result": a+b}
+    return {"result": a*b}
 
 
 urlpatterns = [
